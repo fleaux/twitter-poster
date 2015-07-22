@@ -1,11 +1,11 @@
 <?php
  
-$CONSUMER_KEY='2TkC4Rto21DAGJCK3zUhzRVvs';
-$CONSUMER_SECRET='qcJkxGKxwSTmuIURn9lyr4qs9RYt3RAMQ6a98Ca0vWMkVvWp5S';
-$OAUTH_CALLBACK='http://florian-chapon.fr/pages/realisations/twitter_post/callback.php';
+$CONSUMER_KEY='ENTER_YOUR_KEY';
+$CONSUMER_SECRET='ENTER_YOUR_CONSUMER_SECRET';
+$OAUTH_CALLBACK='ENTER_YOUR_CALLBACK_URL';
 
 
-require_once 'twitter_library/twitteroauth.php';
+require_once '../twitter_library/twitteroauth.php';
 
 $connection = new TwitterOAuth($CONSUMER_KEY, $CONSUMER_SECRET);
 $request_token = $connection->getRequestToken($OAUTH_CALLBACK); //get Request Token

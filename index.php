@@ -21,7 +21,7 @@ if(isset($_SESSION['name']))
 	
 {
 	
-echo "<div style='width:650px;text-align:center;margin-bottom:20px;padding-top:20px;'><u><b>TWITTER</u>:</b><br/><br/><a href='logout.php'><img src='img/twitter_logout.png'></img></a></div>";
+echo "<div style='width:650px;text-align:center;margin-bottom:20px;padding-top:20px;'><u><b>TWITTER</u>:</b><br/><br/><a href='twitter_scripts/logout.php'><img src='img/twitter_logout.png'></img></a></div>";
 	
 
 ?>
@@ -113,7 +113,7 @@ document.getElementById('textcount').innerHTML = twitterlength+"/"+tweet;
 
 else {
 	//LIEN DE CONNECTION QUI S'AFFICHE SI VOUS ETES DECONNECTE.
-	echo '<script type="text/javascript">$("#twittersignin").load("login.php");</script><br/><br/>';
+	echo '<script type="text/javascript">$("#twittersignin").load("twitter_scripts/login.php");</script><br/><br/>';
 	
 }
 
