@@ -1,9 +1,7 @@
 <?php
- 
 $CONSUMER_KEY='ENTER_YOUR_KEY';
 $CONSUMER_SECRET='ENTER_YOUR_CONSUMER_SECRET';
 $OAUTH_CALLBACK='ENTER_YOUR_CALLBACK_URL';
-
 
 require_once '../twitter_library/twitteroauth.php';
 
@@ -22,7 +20,7 @@ if( $request_token)
         case 200:
             $url = $connection->getAuthorizeURL($token);
             echo "<div style='width:650px;text-align:center;margin-bottom:20px;padding-top:20px;'><u><b>TWITTER</u>:</b><br/><br/><a href='".$url."'><img src='img/twitter_login.png'></img></a></div>";
-			//redirect to Twitter .
+			// Redirect to Twitter .
             // header('Location: ' . $url); 
             break;
         default:
@@ -31,7 +29,7 @@ if( $request_token)
     }
  
 }
-else //error receiving request token
+else // Error receiving request token
 {
     echo "Error Receiving Request Token";
 }
